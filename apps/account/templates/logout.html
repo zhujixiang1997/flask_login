@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.alert("登录成功!!")
+    </script>
+    <style type="text/css">
+        .p1{
+            color: red;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 200px;
+        }
+        .p2{
+            text-align: center;
+        }
+        .p2>a>button{
+            margin: 10px;
+            width: 100px;
+            height: 50px;
+            font-size: 20px
+        }
+    </style>
+</head>
+<body>
+<p class="p1">做我的狗，有牌面！！！</p>
+<p class="p2">
+    <a href="{{ url_for('account.logout') }}">
+        <button>退出登录</button>
+    </a>
+</p>
+</body>
+</html>
